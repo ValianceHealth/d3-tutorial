@@ -1,19 +1,19 @@
 import { Fragment } from "react";
 
-//import BarChart from "./components/BarChart";
+import BarChart from "./components/BarChart";
 //import Circle from "./components/Circle";
 //import Text from "./components/Text";
-import Drag from "./components/Drag";
+//import Drag from "./components/Drag";
 
 function App() {
   return (
     <Fragment>
+     <BarChart />
      {/*
-       *<BarChart />
        *<Circle />
        *<Text />
+       * <Drag />
        */}
-     <Drag />
     </Fragment>
   );
 }
