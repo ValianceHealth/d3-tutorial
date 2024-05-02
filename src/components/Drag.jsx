@@ -13,6 +13,7 @@ function Drag() {
     let drag = d3.drag().on("drag", handleDrag);
 
     function handleDrag(e) {
+      console.log(e);
       e.subject.x = e.x;
       e.subject.y = e.y;
       update();
@@ -44,7 +45,7 @@ function Drag() {
         .attr("cy", function (d) {
           return d.y;
         })
-        .attr("r", 40);
+        .attr("r", 10);
     }
 
     updateData();
